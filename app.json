@@ -1,0 +1,55 @@
+{
+  "name": "Donate Bot",
+  "description": "Simple Telegram Bot to tell How to Donate you",
+  "keywords": [
+    "telegram",
+    "donate",
+    "plugin",
+    "telegram-bot",
+    "productivity",
+    "KazeDevID"
+  ],
+  "repository": "https://github.com/KazeDevID/DonateBot",
+  "website": "https://github.com/KazeDevID/",
+  "success_url": "https://github.com/KazeDevID/",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "TOKEN": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "DONATE_TEXT": {
+      "description": "Your Donation Text, Markdowns Apply, Read the READMe.md for Markdown Help",
+      "value": "",
+      "required": false
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your ID ! Start @MissRose_bot and send /info",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+ ],
+"addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ]
+}
